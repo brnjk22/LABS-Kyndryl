@@ -1,0 +1,7 @@
+#Router3
+!
+interface e0/1
+    ip address 192.168.30.1 255.255.255.0
+    no shutdown
+!
+end

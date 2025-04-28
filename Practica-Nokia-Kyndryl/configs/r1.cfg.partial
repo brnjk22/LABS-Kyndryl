@@ -1,0 +1,16 @@
+set / interface ethernet-1/1 admin-state enable
+set / interface ethernet-1/1 subinterface 0
+set / interface ethernet-1/1 subinterface 0 ipv4
+set / interface ethernet-1/1 subinterface 0 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 0 ipv4 address 192.168.10.0/31
+ 
+set / interface ethernet-1/2 admin-state enable
+set / interface ethernet-1/2 subinterface 0
+set / interface ethernet-1/2 subinterface 0 ipv4
+set / interface ethernet-1/2 subinterface 0 ipv4 admin-state enable
+set / interface ethernet-1/2 subinterface 0 ipv4 address 192.168.20.0/31
+ 
+ 
+set / network-instance r1
+set / network-instance r1 interface ethernet-1/1.0
+set / network-instance r1 interface ethernet-1/2.0

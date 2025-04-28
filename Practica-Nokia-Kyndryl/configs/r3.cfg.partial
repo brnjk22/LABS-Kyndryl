@@ -1,0 +1,18 @@
+set / interface ethernet-1/1 admin-state enable
+set / interface ethernet-1/1 subinterface 0
+set / interface ethernet-1/1 subinterface 0 ipv4
+set / interface ethernet-1/1 subinterface 0 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 0 ipv4 address 192.168.20.1/31
+ 
+set / interface ethernet-1/2 admin-state enable
+set / interface ethernet-1/2 subinterface 0
+set / interface ethernet-1/2 subinterface 0 ipv4
+set / interface ethernet-1/2 subinterface 0 ipv4 admin-state enable
+set / interface ethernet-1/2 subinterface 0 ipv4 address 192.168.60.0/31
+ 
+set / network-instance r3
+set / network-instance r3 interface ethernet-1/1.0
+set / network-instance r3 interface ethernet-1/2.0
+
+set / network-instance r3 protocols static static-route 192.168.50.0/31 next-hop 192.168.60.1
+set / network-instance r3 protocols static static-route 192.168.30.0/31 next-hop 192.168.20.0
