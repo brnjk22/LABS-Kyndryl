@@ -1,0 +1,370 @@
+{
+  "name": "VLAN3",
+  "type": "clab",
+  "clab": {
+    "config": {
+      "prefix": "clab",
+      "mgmt": {
+        "network": "clab",
+        "bridge": "br-9081c0b06504",
+        "ipv4-subnet": "172.20.20.0/24",
+        "ipv4-gw": "172.20.20.1",
+        "ipv6-subnet": "3fff:172:20:20::/64",
+        "ipv6-gw": "3fff:172:20:20::1",
+        "mtu": 1500,
+        "external-access": true
+      }
+    }
+  },
+  "ssh-pub-keys": [],
+  "nodes": {
+    "r1": {
+      "index": "0",
+      "shortname": "r1",
+      "longname": "clab-VLAN3-r1",
+      "fqdn": "r1.VLAN3.io",
+      "group": "",
+      "labdir": "/home/bruno/LABS-Kyndryl/Practica-VLAN-Kyndryl/clab-VLAN3/r1",
+      "kind": "cisco_iol",
+      "image": "vrnetlab/cisco_iol:1.0.0",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.16",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::10",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-9081c0b06504",
+        "clab-node-group": "",
+        "clab-node-kind": "cisco_iol",
+        "clab-node-lab-dir": "/home/bruno/LABS-Kyndryl/Practica-VLAN-Kyndryl/clab-VLAN3/r1",
+        "clab-node-longname": "clab-VLAN3-r1",
+        "clab-node-name": "r1",
+        "clab-node-type": "",
+        "clab-owner": "bruno",
+        "clab-topo-file": "/home/bruno/LABS-Kyndryl/Practica-VLAN-Kyndryl/topo.clab.yaml",
+        "containerlab": "VLAN3"
+      },
+      "port-bindings": [
+      ]
+    },
+    "r2": {
+      "index": "1",
+      "shortname": "r2",
+      "longname": "clab-VLAN3-r2",
+      "fqdn": "r2.VLAN3.io",
+      "group": "",
+      "labdir": "/home/bruno/LABS-Kyndryl/Practica-VLAN-Kyndryl/clab-VLAN3/r2",
+      "kind": "cisco_iol",
+      "image": "vrnetlab/cisco_iol:1.0.0",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.19",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::13",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-9081c0b06504",
+        "clab-node-group": "",
+        "clab-node-kind": "cisco_iol",
+        "clab-node-lab-dir": "/home/bruno/LABS-Kyndryl/Practica-VLAN-Kyndryl/clab-VLAN3/r2",
+        "clab-node-longname": "clab-VLAN3-r2",
+        "clab-node-name": "r2",
+        "clab-node-type": "",
+        "clab-owner": "bruno",
+        "clab-topo-file": "/home/bruno/LABS-Kyndryl/Practica-VLAN-Kyndryl/topo.clab.yaml",
+        "containerlab": "VLAN3"
+      },
+      "port-bindings": [
+      ]
+    },
+    "r3": {
+      "index": "2",
+      "shortname": "r3",
+      "longname": "clab-VLAN3-r3",
+      "fqdn": "r3.VLAN3.io",
+      "group": "",
+      "labdir": "/home/bruno/LABS-Kyndryl/Practica-VLAN-Kyndryl/clab-VLAN3/r3",
+      "kind": "cisco_iol",
+      "image": "vrnetlab/cisco_iol:1.0.0",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.18",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::12",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-9081c0b06504",
+        "clab-node-group": "",
+        "clab-node-kind": "cisco_iol",
+        "clab-node-lab-dir": "/home/bruno/LABS-Kyndryl/Practica-VLAN-Kyndryl/clab-VLAN3/r3",
+        "clab-node-longname": "clab-VLAN3-r3",
+        "clab-node-name": "r3",
+        "clab-node-type": "",
+        "clab-owner": "bruno",
+        "clab-topo-file": "/home/bruno/LABS-Kyndryl/Practica-VLAN-Kyndryl/topo.clab.yaml",
+        "containerlab": "VLAN3"
+      },
+      "port-bindings": [
+      ]
+    },
+    "r4": {
+      "index": "3",
+      "shortname": "r4",
+      "longname": "clab-VLAN3-r4",
+      "fqdn": "r4.VLAN3.io",
+      "group": "",
+      "labdir": "/home/bruno/LABS-Kyndryl/Practica-VLAN-Kyndryl/clab-VLAN3/r4",
+      "kind": "cisco_iol",
+      "image": "vrnetlab/cisco_iol:1.0.0",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.17",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::11",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-9081c0b06504",
+        "clab-node-group": "",
+        "clab-node-kind": "cisco_iol",
+        "clab-node-lab-dir": "/home/bruno/LABS-Kyndryl/Practica-VLAN-Kyndryl/clab-VLAN3/r4",
+        "clab-node-longname": "clab-VLAN3-r4",
+        "clab-node-name": "r4",
+        "clab-node-type": "",
+        "clab-owner": "bruno",
+        "clab-topo-file": "/home/bruno/LABS-Kyndryl/Practica-VLAN-Kyndryl/topo.clab.yaml",
+        "containerlab": "VLAN3"
+      },
+      "port-bindings": [
+      ]
+    },
+    "r5": {
+      "index": "4",
+      "shortname": "r5",
+      "longname": "clab-VLAN3-r5",
+      "fqdn": "r5.VLAN3.io",
+      "group": "",
+      "labdir": "/home/bruno/LABS-Kyndryl/Practica-VLAN-Kyndryl/clab-VLAN3/r5",
+      "kind": "cisco_iol",
+      "image": "vrnetlab/cisco_iol:1.0.0",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.20",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::14",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-9081c0b06504",
+        "clab-node-group": "",
+        "clab-node-kind": "cisco_iol",
+        "clab-node-lab-dir": "/home/bruno/LABS-Kyndryl/Practica-VLAN-Kyndryl/clab-VLAN3/r5",
+        "clab-node-longname": "clab-VLAN3-r5",
+        "clab-node-name": "r5",
+        "clab-node-type": "",
+        "clab-owner": "bruno",
+        "clab-topo-file": "/home/bruno/LABS-Kyndryl/Practica-VLAN-Kyndryl/topo.clab.yaml",
+        "containerlab": "VLAN3"
+      },
+      "port-bindings": [
+      ]
+    },
+    "sw1": {
+      "index": "5",
+      "shortname": "sw1",
+      "longname": "clab-VLAN3-sw1",
+      "fqdn": "sw1.VLAN3.io",
+      "group": "",
+      "labdir": "/home/bruno/LABS-Kyndryl/Practica-VLAN-Kyndryl/clab-VLAN3/sw1",
+      "kind": "cisco_iol",
+      "image": "vrnetlab/cisco_iol:L2-1.0.0",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.14",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::e",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-9081c0b06504",
+        "clab-node-group": "",
+        "clab-node-kind": "cisco_iol",
+        "clab-node-lab-dir": "/home/bruno/LABS-Kyndryl/Practica-VLAN-Kyndryl/clab-VLAN3/sw1",
+        "clab-node-longname": "clab-VLAN3-sw1",
+        "clab-node-name": "sw1",
+        "clab-node-type": "l2",
+        "clab-owner": "bruno",
+        "clab-topo-file": "/home/bruno/LABS-Kyndryl/Practica-VLAN-Kyndryl/topo.clab.yaml",
+        "containerlab": "VLAN3"
+      },
+      "port-bindings": [
+      ]
+    },
+    "sw2": {
+      "index": "6",
+      "shortname": "sw2",
+      "longname": "clab-VLAN3-sw2",
+      "fqdn": "sw2.VLAN3.io",
+      "group": "",
+      "labdir": "/home/bruno/LABS-Kyndryl/Practica-VLAN-Kyndryl/clab-VLAN3/sw2",
+      "kind": "cisco_iol",
+      "image": "vrnetlab/cisco_iol:L2-1.0.0",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.21",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::15",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-9081c0b06504",
+        "clab-node-group": "",
+        "clab-node-kind": "cisco_iol",
+        "clab-node-lab-dir": "/home/bruno/LABS-Kyndryl/Practica-VLAN-Kyndryl/clab-VLAN3/sw2",
+        "clab-node-longname": "clab-VLAN3-sw2",
+        "clab-node-name": "sw2",
+        "clab-node-type": "l2",
+        "clab-owner": "bruno",
+        "clab-topo-file": "/home/bruno/LABS-Kyndryl/Practica-VLAN-Kyndryl/topo.clab.yaml",
+        "containerlab": "VLAN3"
+      },
+      "port-bindings": [
+      ]
+    },
+    "sw3": {
+      "index": "7",
+      "shortname": "sw3",
+      "longname": "clab-VLAN3-sw3",
+      "fqdn": "sw3.VLAN3.io",
+      "group": "",
+      "labdir": "/home/bruno/LABS-Kyndryl/Practica-VLAN-Kyndryl/clab-VLAN3/sw3",
+      "kind": "cisco_iol",
+      "image": "vrnetlab/cisco_iol:L2-1.0.0",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.15",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::f",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-9081c0b06504",
+        "clab-node-group": "",
+        "clab-node-kind": "cisco_iol",
+        "clab-node-lab-dir": "/home/bruno/LABS-Kyndryl/Practica-VLAN-Kyndryl/clab-VLAN3/sw3",
+        "clab-node-longname": "clab-VLAN3-sw3",
+        "clab-node-name": "sw3",
+        "clab-node-type": "l2",
+        "clab-owner": "bruno",
+        "clab-topo-file": "/home/bruno/LABS-Kyndryl/Practica-VLAN-Kyndryl/topo.clab.yaml",
+        "containerlab": "VLAN3"
+      },
+      "port-bindings": [
+      ]
+    }
+  },
+  "links": [
+    {
+      "a": {
+        "node": "r1",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:5a:bf:53",
+        "peer": "z"
+      },
+      "z": {
+        "node": "sw1",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:7c:4c:a8",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "r2",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:85:af:44",
+        "peer": "z"
+      },
+      "z": {
+        "node": "sw1",
+        "interface": "eth2",
+        "mac": "aa:c1:ab:bf:b9:f8",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "r3",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:33:92:23",
+        "peer": "z"
+      },
+      "z": {
+        "node": "sw1",
+        "interface": "eth5",
+        "mac": "aa:c1:ab:57:16:3b",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "r4",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:eb:ec:e9",
+        "peer": "z"
+      },
+      "z": {
+        "node": "sw2",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:b9:5e:cb",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "r5",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:03:23:0a",
+        "peer": "z"
+      },
+      "z": {
+        "node": "sw2",
+        "interface": "eth2",
+        "mac": "aa:c1:ab:09:c4:83",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "sw1",
+        "interface": "eth6",
+        "mac": "aa:c1:ab:c5:22:18",
+        "peer": "z"
+      },
+      "z": {
+        "node": "sw3",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:c3:69:af",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "sw2",
+        "interface": "eth6",
+        "mac": "aa:c1:ab:e6:44:e1",
+        "peer": "z"
+      },
+      "z": {
+        "node": "sw3",
+        "interface": "eth2",
+        "mac": "aa:c1:ab:81:05:43",
+        "peer": "a"
+      }
+    }
+  ]
+}
